@@ -1,0 +1,54 @@
+
+.list {
+  &Item {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &Description {
+      padding: 1rem;
+    }
+    &Icon {
+      display: inline-block;
+      transform: rotate(-90deg);
+      font-size: 24px;
+      transition: transform 0.4s ease;
+      &Active {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &NoResult {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  &Item {
+    cursor: pointer;
+    padding: 1rem;
+    transition: background-color 0.4s ease;
+    &Active {
+      background-color: #f1f1f1;
+    }
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.search {
+  margin-top: 1rem;
+  padding: 10px 1rem;
+  max-width: 300px;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
